@@ -1,1 +1,1 @@
-"# angular-seed" 
+# angular-seed
