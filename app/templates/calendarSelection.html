@@ -1,0 +1,24 @@
+<h1>Calendar Selection</h1>
+{{date + '@'}} {{time}}
+
+<div style="width: 60%;">
+    <div style="width: 40%; float: left;">
+        <button style="float: left;"
+        ng-click="calendarData.decrement()">Previous</button>
+        <button style="float: left;"
+        ng-click="calendarData.today()">Today</button>
+        <button style="float: left;"
+        ng-click="calendarData.increment();">Next</button>
+    </div>
+    <div style="width: 40%; float: right;">
+        <a ui-sref="app.draft.month">
+            <button style="float: left;"
+            ng-click="calendarData.setCalendarView('month');">Month</button>
+        </a>
+        <a ui-sref="app.draft.week">
+            <button style="float: left;"
+            ng-click="calendarData.setCalendarView('week');">Week</button>
+        </a>
+        <button style="float: left;"><s>Day</s></button>
+    </div>
+</div>
